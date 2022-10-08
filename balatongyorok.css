@@ -24,7 +24,7 @@ body{
     /* background-position-x: 80%; */
     position: absolute;
     height: 200px;
-    width: 73%;
+    width: 72%;
     margin: 1px 10px 10px 0px;
     padding-top: 15px;
     padding-left: 20px;
@@ -51,8 +51,18 @@ p{
     padding: 20px;
 }
 
-#batsanyi table{
-    background: ;
+table{
+    background-color: #b0d1f1;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid
+}
+
+.data{
+    font-weight: bold;
+    text-align: center;
 }
 
 #bel{
@@ -61,3 +71,4 @@ p{
     float: right;
     padding: 20px;
 }
+
