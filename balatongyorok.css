@@ -6,11 +6,6 @@ body{
     margin: auto
 }
 
-#body{
-    width: 100%;
-    margin: auto;
-}
-
 #header{
     min-width: 100%;
     max-width: 100%;
@@ -26,24 +21,43 @@ body{
     background-image: url(./image/panorama.jpg);
     background-size: cover;
     background-position-y: 50%;
-    background-position-x: 80%;
+    /* background-position-x: 80%; */
     position: absolute;
     height: 200px;
-    width: 70%;
-    margin: 1px 10px 10px -10px;
+    width: 73%;
+    margin: 1px 10px 10px 0px;
     padding-top: 15px;
     padding-left: 20px;
-
 
 }
 
 #header img{
     position: relative;
-       
     width: 18%;
     margin-top: 10px;
-    margin-left: 700px
+    margin-left: 750px
 
 }
 
+p{
+    margin-top: 25px;
+    margin-left: 10px;
+}
 
+#batsanyi{
+    width: 450px;
+    background-color: #5B9CEA;
+    float:left;
+    padding: 20px;
+}
+
+#batsanyi table{
+    background: ;
+}
+
+#bel{
+    width: 450px;
+    background-color: #5B9CEA;
+    float: right;
+    padding: 20px;
+}
