@@ -1,0 +1,124 @@
+#header {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  #header img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #header img {
+    display: none;
+  }
+
+  #header {
+    height: 150px;
+  }
+
+  .bekezdes {
+    color: red;
+  }
+}
+.oszlop-1 {
+  width: 20px;
+  color: #0a0f19;
+}
+
+.oszlop-2 {
+  width: 40px;
+  color: #141e32;
+}
+
+.oszlop-3 {
+  width: 60px;
+  color: #1e2d4b;
+}
+
+.oszlop-4 {
+  width: 80px;
+  color: #283c64;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.p-1 {
+  padding: 0.8rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.p-2 {
+  padding: 1.6rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.p-3 {
+  padding: 2.4rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.p-4 {
+  padding: 3.2rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+.kepekhatter .kep-Jani {
+  background-image: image-url("img/Jani.png");
+}
+.kepekhatter .kep-Pisti {
+  background-image: image-url("img/Pisti.png");
+}
+.kepekhatter .kep-Csabi {
+  background-image: image-url("img/Csabi.png");
+}
+
+.border-4 {
+  border: 2.8;
+}
+
+.border-3 {
+  border: 2.1;
+}
+
+.border-2 {
+  border: 1.4;
+}
+
+.border-1 {
+  border: 0.7;
+}
+
+#batsanyi {
+  background-color: #654312;
+  color: #fff;
+}
+
+#bel {
+  background-color: #d97fe1;
+  color: #323;
+}
+
+#header h1 {
+  color: #d97fe1;
+}
+#header-cim {
+  background-color: #fff;
+}

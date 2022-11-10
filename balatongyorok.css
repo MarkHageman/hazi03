@@ -1,35 +1,76 @@
 body{
     background-image: url(./image/back.jpg);
     background-size:cover;
-    min-width: 650px;
-    max-width: 1000px;
+    width: 95%;
     margin: auto
 }
 
-#header{
+/* #header{
     min-width: 100%;
     max-width: 100%;    
-}
+} */
 
 #header h1{
     background-image: url(./image/panorama.jpg);
     background-size: cover;
     background-position-y: 50%;
-    position: absolute;
+    /* position: absolute; */
     height: 200px;
-    width: 64%;
+    width: 100%;
     margin: 10px 10px 10px 0px;
     padding-top: 15px;
     padding-left: 20px;
+    float: left;
+   
+}
+
+h1{
+    color: aliceblue;
+    background-color: black;
+    transition: color 3s, background-color 2s;
+}
+
+#header h1:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+#kikoto{
+    margin-top: 100px;
+   
+    transition: width 10s, transform 10s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+    
+}
+
+#kikoto:hover{
+    transform: matrix(1, 2.5, 2, 6, 50, 0);
+    
+}
+
+
+#header #kep{
+    float: right;
+    /* position: relative; */
+    width: 15%;
+    margin-top: -220px;
+    margin-left: 750px;
+    border-radius: 10px;
+    /*matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() ) */
+    transform: translate(25px, 100px),;
+    transform: rotate(45deg);
+    transform: scaleY(0.8);
+    transform: skew(15deg, 20deg);
+    transform: matrix(0.7, 0.7, -0.6, 1, 0, 50);
+    transition: width 2s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
 
 }
 
-#header img{
-    position: relative;
-    width: 18%;
-    margin-top: 20px;
-    margin-left: 750px;
-
+#header #kep:hover {
+    width: 50px;
 }
 
 p{
@@ -38,11 +79,95 @@ p{
     margin-left: 10px;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* position: fixed; */
+}
+
+li{
+    display: inline;
+    /*float: left*/
+    margin: 2px;
+}
+
+li a{
+    
+    width: 100px;
+    background-color: white;
+    border: 1px solid red;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+
+
+}
+
+li a:hover{
+    background-color: rgb(238, 124, 124);
+    color: white;
+}
+
+.active{
+    background-color: rgb(46, 214, 46);
+    color: white;
+}
+
+@media screen and (max-width: 470px ) {
+    ul{
+        margin-top: 70px;
+    }
+    li{
+        display: grid;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 470px) and (max-width: 950px) {
+    li{
+        display: inline-block ;
+        margin-top: 25px;
+    }
+}
+
+h2{
+    background-color: red;
+    animation-name: szinatmenet;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+/* shorthand    animation: name duration timing-function delay iteration-count direction fill-mode;
+ */
+
+}
+
+@keyframes szinatmenet {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: white;
+    }
+    75% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: green;
+    }
+    
+}
+
+
 #batsanyi{
-    width: 450px;
+    width: 45%;
     background-color: #5B9CEA;
-    float:left;
+    /* float:left; */
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 table{
@@ -60,12 +185,49 @@ td{
 }
 
 #bel{
-    width: 450px;
+    width: 45%;
     background-color: #5B9CEA;
-    float: right;
+    /* float: right; */
     padding: 20px;
 }
 
 a:hover{
     background-color: red;
+}
+
+
+
+@media screen and (max-width: 920px) {
+    #batsanyi, #bel{
+        width: 90%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1100px) {
+    #batsanyi{
+        float: left;
+    }
+    #bel{
+        float: right;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #header img{
+        width: 100px
+    }
+}
+
+@media screen and (max-width: 550px){
+    #header img{
+        display: none;
+    }
+    #header{
+        height: 150px;
+    }
+    .bekezdes{
+        color: red;
+    }
 }

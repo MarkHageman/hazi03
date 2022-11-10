@@ -1,0 +1,75 @@
+@import "alapbeallitasok";
+@import "mobil";
+
+$foszin: #d97fe1;
+
+$szinek: (
+    elsodlegesszin: #321654,
+    masodlagosszin: #654312,
+    harmadlagosszin: #987541,
+);
+
+@function betuszin($szin){
+    @if (lightness($szin) > 60){
+        @return #323;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+@mixin hatter($szin){
+    background-color: $szin;
+    color: betuszin($szin);
+}
+
+@for $i from 1 through 4{
+    .oszlop-#{$i} {
+        width: 20px * $i;
+        color: rgb(10*$i, 15*$i, 25*$i);
+    }
+}
+
+$tavolsagok: (1, 2, 3, 4, 5);
+@each $tavolsag in $tavolsagok{
+    .m-#{$tavolsag} {margin: #{$tavolsag}rem;}
+    .p-#{$tavolsag} {padding: #{$tavolsag * 0.8}rem;}
+}
+
+$kepek: Jani, Pisti, Csabi;
+
+.kepekhatter{
+    @each $kep in $kepek{
+        .kep-#{$kep} {
+            background-image: image-url("img/#{$kep}.png");
+        }
+    }
+}
+
+$border: 4;
+
+
+@while $border > 0{
+    .border-#{$border} {
+        border: 0.7 * $border;
+    }
+    $border: $border - 1;
+}
+
+#batsanyi{
+    background-color: map-get($szinek, masodlagosszin);
+    color: betuszin(map-get($szinek, masodlagosszin));
+}
+
+#bel{
+    @include hatter($foszin);
+}
+
+#header{
+    h1{
+        color: $foszin;
+    }
+    &-cim{
+        background-color: #fff;
+    }
+}

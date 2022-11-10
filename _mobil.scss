@@ -1,0 +1,17 @@
+@media screen and (max-width: 900px) {
+    #header img{
+        width: 100px
+    }
+}
+
+@media screen and (max-width: 550px){
+    #header img{
+        display: none;
+    }
+    #header{
+        height: 150px;
+    }
+    .bekezdes{
+        color: red;
+    }
+}
